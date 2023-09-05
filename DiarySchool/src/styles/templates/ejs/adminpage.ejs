@@ -1,0 +1,40 @@
+<%- include('out/header') -%>
+<link rel="stylesheet" href="/src/styles/css/adminpage.css">
+<title>Admin Page</title>
+
+<header class="header">
+  <div class="header__nav">
+    <nav>
+      <a name="diary" href="/diary">Diary</a>
+      <a name="panel">Admin Panel</a>
+      <a name="adminlogin">Admin - <%= adminlogin %></a>
+    </nav>
+  </div>
+</header>
+<section class="users">
+  <div class="users__card">
+    <h1>No confrim Users</h1>
+    <ul>
+      <% users.forEach(function(user) { %>
+        <% if (user.confirm === 'noconfirm') { %>
+          <li>
+            <strong name="login">Login:</strong> <span><%= user.login %></span><br>
+            <strong name="post">Post:</strong> <span><%= user.post %></span><br>
+            <strong name="status">Status:</strong> <span name="status"><%= user.confirm %></span><br>
+            <div class="btn__form">
+              <form action="/admin/confirm/<%= user.id %>" method="POST">
+                <button type="submit" class="confirm">Confirm</button>
+              </form>
+              <form action="/admin/reject/<%= user.id %>" method="POST">
+                <button type="submit" class="reject">Reject</button>
+              </form>
+            </div>
+          </li>
+        <% } %>
+      <% }); %>
+  </ul>
+  </div>
+</section>
+
+
+<%- include('out/footer') -%>

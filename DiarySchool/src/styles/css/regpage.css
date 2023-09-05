@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    background: #009579;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.container__card {
+    width: 600px;
+    height: 700px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.container__card form h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.form__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 66px;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__container input[name="login"] {
+    width: 500px;
+    height: 60px;
+    border: 2px solid #DDD;
+    background: #FFF;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.form__container input[name="login"]::placeholder {
+    color: #939191;
+    font-size: 32px;
+}
+
+.form__container input[name="password"] {
+    width: 500px;
+    height: 60px;
+    border: 2px solid #DDD;
+    background: #FFF;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.form__container input[name="password"]::placeholder {
+    color: #939191;
+    font-size: 32px;
+}
+
+.form__container select[name="post"] {
+    width: 500px;
+    height: 60px;
+    font-size: 32px;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+}
+
+.form__btn button {
+    width: 420px;
+    height: 70px;
+    background: #009579;
+    color: #fff;
+    border: 0;
+    font-size: 36px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form__btn button:hover {
+    background: #005545;
+}
+
+.form__info {
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+    font-size: 24px;
+}
+
+.form__info p span a {
+    color: #009579;
+    font-size: 28px;
+    margin-left: 5px;
+    transition: 0.5s;
+    font-weight: 500;
+    
+}
+
+.form__info p span a:hover {
+    color: #00f1c5;
+}
+
+

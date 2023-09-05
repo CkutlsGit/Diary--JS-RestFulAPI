@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/diary_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: #F8F8F8;
+    height: 100px;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 30px 0px 61px;
+}
+
+.header__content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #009579;
+}
+
+.header__content h1[name="forteacher"] {
+    margin-top: -15px;
+    color: #00FACB;
+}
+
+.hide__button {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+    height: 100px;
+    cursor: pointer;
+    background: #00FACB;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.hide__button svg {
+    width: 100%;
+    height: 40%;
+}
+
+.active__btn {
+    top: 450px;
+    left: 400px;
+    background: #FFF;
+    color: #00FACB;
+}
+
+.menu {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.menu.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu__card {
+    background: #fff;
+    opacity: 70%;
+    width: 400px;
+    height: 90%;
+    transition: left 0.5s;
+}
+
+.menu__card h1 {
+    font-size: 48px;
+    font-weight: 600;
+    padding: 49px 44px 82px 44px;
+}
+
+.menu__card ul li {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro {
+    position: absolute;
+    top: 400px;
+    right: 650px;
+}
+
+.intro .intro__content h1[name="teachermsg"] {
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
+
+.intro .intro__content a[href="/diary/main/teacher"] {
+    position: relative;
+    left: 350px;
+    top: 50px;
+    color: #009579;
+    font-size: 38px;
+    font-weight: 600;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 10px 60px;
+}
+
+.intro__content h1 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.intro .intro__content a {
+    position: relative;
+    left: 160px;
+    top: 50px;
+    color: #009579;
+    font-size: 38px;
+    font-weight: 600;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 10px 60px;
+}
+

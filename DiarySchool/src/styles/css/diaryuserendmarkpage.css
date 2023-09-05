@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    background: #37A48F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background: #fff;
+    height: 120px;
+    padding-top: 49px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
+}
+
+.header__content h1 a {
+    color: #009579;
+    font-size: 48px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header__content h1 a:hover {
+    color: #d0972e;
+}
+
+.marks {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.marks__card {
+    display: flex;
+    justify-content: start;
+    background: #fff;
+    width: 500px;
+    height: 500px;
+}
+
+.card__content {
+    padding-top: 110px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.card__content p {
+    margin-bottom: 20px;
+}

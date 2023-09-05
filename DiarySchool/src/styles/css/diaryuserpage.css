@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    background: #009579;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background: #fff;
+    height: 120px;
+    padding: 19px 160px 0px 40px;
+    font-size: 28px;
+    color: #009579;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__content h1 {
+    color: #3DB49D;
+}
+
+.header__content h1 a {
+    color: #009579;
+    transition: 0.5s;
+}
+
+.header__content h1 a:hover {
+    color: #d0972e;
+}
+
+.balls {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.balls__card {
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 110px 0px 0px 50px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/css/regpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__card">
+            <form action="/" method="post">
+                <h1>Signup</h1>
+                <div class="form__content">
+                    <div class="form__container">
+                        <input type="text" name="login" placeholder="Enter your Login" required>
+                        <input type="password" name="password" placeholder="Enter your Password" required>
+                        <select name="post" id="post" required>
+                            <option value="" disabled selected>Enter your role</option>
+                            <option value="school">Schoolboy</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                        <div class="form__btn">
+                            <button type="submit">Signup</button>
+                        </div>
+                        <div class="form__info">
+                            <p>Already have an account?<span><a href="/auth">Login</a></span></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

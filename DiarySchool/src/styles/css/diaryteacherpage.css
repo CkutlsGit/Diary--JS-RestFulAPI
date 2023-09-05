@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    background: #37A48F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    padding-top: 29px;
+    background: #fff;
+    height: 120px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content h1 {
+    color: #009579;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.header__content h1 a {
+    color: #009579;
+    transition: 0.5s;
+}
+
+.header__content h1 a:hover {
+    color: #d0972e;
+}
+
+.card {
+    background: #DEDEDE;
+    height: 200%;
+    width: 500px;
+}
+
+.card__content ul {
+    list-style: none;
+    padding: 20px 0px 0px 20px;
+}
+
+.card__content ul li {
+    padding: 5px 0px 15px;
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.card__content ul li span {
+    color: #3DB49D;
+    font-size: 28px;
+}
+
+.card__content form {
+    padding: 0px 0px 30px 0px;
+}
+
+.card__content form button {
+    background: #009579;
+    color: #fff;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 32px;
+}
+
+.card__content form select {
+    margin: 0px 10px 0px 10px;
+    background: #00FFCF;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 5px 5px;
+    font-size: 30px;
+}

@@ -1,0 +1,4 @@
+src/db
+src/styles/img
+node_modules/
+package-lock.json

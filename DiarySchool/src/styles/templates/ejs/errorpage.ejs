@@ -1,0 +1,14 @@
+<%- include('out/header') -%>
+<link rel="stylesheet" href="/src/styles/css/errorpage.css">
+<title>Error</title>
+
+<div class="content">
+    <div class="content__card">
+        <h1>An error has occurred: <span><%= error %></span></h1>
+        <div class="card__btn">
+            <a href="/">Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include('out/footer') -%>

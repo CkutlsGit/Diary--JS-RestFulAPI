@@ -1,0 +1,25 @@
+<%- include('out/header.ejs') %>
+<link rel="stylesheet" href="/src/styles/css/diarypage.css">
+<title>Diary page</title>
+
+<header class="header">
+    <div class="header__content">
+        <h1>DiaryPage</h1>
+        <h1 name="login"><%= user %></h1>
+    </div>
+</header>
+<section class="intro">
+    <div class="intro__content">
+        <h1>don't you have a diary?</h1>
+        <form action="/diary" method="post">
+            <div class="form__btn">
+                <button type="submit">Create</button>
+            </div>
+        </form>
+        <div class="intro__have">
+            <p>If you have <span><a href="/diary/main">Go Diary main page</a></span></p>
+        </div>
+    </div>
+</section>
+
+<%- include('out/footer.ejs') %>

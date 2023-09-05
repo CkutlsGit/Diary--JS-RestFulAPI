@@ -1,0 +1,44 @@
+<%- include('out/header.ejs') %>
+<link rel="stylesheet" href="/src/styles/css/diarymainpage.css">
+<title>Diary main</title>
+
+<header class="header">
+    <div class="header__content">
+        <h1>DiaryPage</h1>
+        <% if (post === 'teacher' || post === 'admin') {%>
+            <h1 name="forteacher">teacher 's room</h1>
+        <% } %>
+        <h1> <%= login %>, <%= post %> </h1>
+    </div>
+</header>
+<button id="hide" class="hide__button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+</button>
+<section class="menu">
+    <div class="menu__card">
+        <h1>List Teacher</h1>
+        <ul>
+            <% user.forEach((teacher) => { %>
+                <% if (teacher.post === 'teacher') {%>
+                    <li>Name: <span><%= teacher.login %></span></li>
+                <%}%>
+            <% }) %>
+        </ul>
+    </div>
+</section>
+<section class="intro">
+    <div class="intro__content">
+        <% if (post === 'teacher' || post === 'admin') {%>
+            <h1 name="teachermsg">Set marks for Schoolboys</h1>
+            <a href="/diary/main/teacher">Set marks</a>
+        <% } else {%>
+            <h1>Check your Marks</h1>
+            <a href="/diary/main/marks/<%= id %>">Check</a>
+        <%}%>
+    </div>
+</section>
+
+<script src="/src/styles/stylescripts/Menu.js"></script>
+<%- include('out/footer.ejs') %>

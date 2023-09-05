@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    background: #009579;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.content__card {
+    width: 600px;
+    height: 700px;
+    background: #FFF;
+    border-radius: 20px;
+}
+
+.content__card form h1 {
+    display: flex;
+    justify-content: center;
+    margin: 31px 0px 86px 0px;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.form__content {
+    display: flex;
+    justify-content: center;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__container input[name="login"] {
+    width: 500px;
+    height: 60px;
+    border: 2px solid #DDD;
+    background: #FFF;
+    margin-bottom: 35px;
+    font-size: 34px;
+}
+
+.form__container input[name="login"]::placeholder {
+    color: #939191;
+    font-size: 32px;
+}
+
+.form__container input[name="password"] {
+    width: 500px;
+    height: 60px;
+    border: 2px solid #DDD;
+    background: #FFF;
+    font-size: 34px;
+}
+
+.form__container input[name="password"]::placeholder {
+    color: #939191;
+    font-size: 32px;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.form__btn button {
+    background: #009579;
+    color: #fff;
+    width: 420px;
+    height: 70px;
+    border: 0;
+    font-size: 36px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.form__btn button:hover {
+    background: #005545;
+}
+
+.form__info {
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+    font-size: 24px;
+}
+
+.form__info p span a {
+    color: #009579;
+    font-size: 26px;
+    font-weight: 500;  
+    transition: 0.5s;
+}
+
+.form__info p span a:hover {
+    color: #00f1c5;
+}

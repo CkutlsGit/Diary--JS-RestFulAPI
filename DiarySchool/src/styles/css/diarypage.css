@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background: #37A48F;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background: #fff;
+    height: 125px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #009579;
+    padding: 29px 49px 49px 63px;
+}
+
+.header__content h1[name="login"] {
+    color: #9deedc;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.header__content h1[name="login"]:hover {
+    color: #e38723;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+}
+
+.intro__content {
+    font-size: 54px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.intro__content form button {
+    color: #009579;
+    font-size: 30px;
+    font-weight: 600;
+    background: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px 100px;
+    cursor: pointer;
+}
+
+.intro__have {
+    display: flex;
+    justify-content: center;
+}
+
+.intro__have p {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.intro__have p span a {
+    color: #00FACB;
+    transition: 0.5s;
+}
+
+.intro__have p span a:hover {
+    color: #d0972e;
+}
+

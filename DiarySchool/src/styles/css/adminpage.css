@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background: #292929;
+    
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__nav nav a[name="diary"] {
+    font-size: 36px;
+    color: #FFF;
+    font-weight: 300;
+    margin: 20px 0px 0px 86px;
+    transition: 0.4s;
+}
+
+.header__nav nav a[name="panel"] {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 19px -90px 20px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.header__nav nav a[name="adminlogin"] {
+    font-size: 36px;
+    color: #FFF;
+    font-weight: 300;
+    margin: 22px 86px 0px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.header__nav nav a[name="diary"]:hover {
+    margin-top: 30px;
+    color: #a0a0a0;
+    text-decoration: underline;
+}
+
+.header__nav nav a[name="adminlogin"]:hover {
+    margin-top: 35px;
+    color: #a0a0a0;
+    text-decoration: underline;
+}
+
+.header__nav nav a[name="panel"]:hover {
+    margin-top: 30px;
+    color: #a0a0a0;
+    text-decoration: underline;
+}
+
+.users {
+    display: flex;
+    justify-content: start;
+}
+
+.users__card {
+    width: 480px;
+    height: 100%;
+    background: #3E3E3E;
+}
+
+.users__card h1 {
+    display: flex;
+    justify-content: center;
+    margin: 94px 0px 127px 0px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.users__card ul li {
+    margin: 0px 0px 20px 20px;
+    color: #E9A24F;
+    list-style-type: none;
+}
+
+.users__card ul li strong {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.users__card ul li span {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+
+
+}
+
+.users__card ul li span[name="status"] {
+    font-size: 30px;
+}
+
+.btn__form {
+    display: flex;
+    margin: 44px 0px 0px 2px;
+}
+
+.btn__form .confirm {
+    width: 160px;
+    height: 60px;
+    margin-right: 48px;
+    background: #75C934;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn__form .reject {
+    width: 160px;
+    height: 60px;
+    margin-right: 48px;
+    background: #F83A3A;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn__form .confirm:hover {
+    background: #4c9415;
+    margin-top: -5px;
+}
+
+.btn__form .reject:hover {
+    background: #971818;
+    margin-top: -5px;
+}
